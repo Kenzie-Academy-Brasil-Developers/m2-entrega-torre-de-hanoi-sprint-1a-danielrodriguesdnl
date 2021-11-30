@@ -25,7 +25,7 @@ function criaTorres() {
   for (let i = 0; i < 3; i++){
       const torre = document.createElement("div");
       torre.style.width= "15px";
-      torre.style.height="200px";
+      torre.style.height="175px";
       torre.style.border="1px solid black";
       torre.style.backgroundColor="grey";
       if(i === 2){
