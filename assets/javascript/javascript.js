@@ -1,6 +1,6 @@
-function criaDiscos() {
+function criarElementos() {
   
-  const body = document.getElementsByTagName("body")[0];
+  const main = document.getElementsByTagName("main")[0];
  
     
     const disco1 = document.createElement("div"); 
@@ -29,30 +29,40 @@ function criaDiscos() {
       disco3.style.borderRadius= "10px"
       disco3.style.backgroundColor="blue";
       disco3.setAttribute('class', 'dis3');
+
+
+      const torre1 = document.createElement("div");
+      torre1.style.width= "15px";
+      torre1.style.height="175px";
+      torre1.style.border="1px solid black";
+      torre1.style.backgroundColor="grey";
+      torre1.setAttribute('class', 'tor1');
+      torre1.appendChild(disco1);
+      torre1.appendChild(disco2);
+      torre1.appendChild(disco3);
       
-      body.appendChild(disco1)
-      body.appendChild(disco2)
-      body.appendChild(disco3)
-   } 
+      const torre2 = document.createElement("div");
+      torre2.style.width= "15px";
+      torre2.style.height="175px";
+      torre2.style.border="1px solid black";
+      torre2.style.backgroundColor="grey";
+      torre2.setAttribute('class', 'tor2');
 
-criaDiscos()
+      const torre3 = document.createElement("div");
+      torre3.style.width= "15px";
+      torre3.style.height="175px";
+      torre3.style.border="1px solid black";
+      torre3.style.backgroundColor="orange";
+      torre3.setAttribute('class', 'tor3');
+      
 
-function criaTorres() {
-  
-  const body = document.getElementsByTagName("body")[0];
-  for (let i = 0; i < 3; i++){
-      const torre = document.createElement("div");
-      torre.style.width= "15px";
-      torre.style.height="175px";
-      torre.style.border="1px solid black";
-      torre.style.backgroundColor="grey";
-      if(i === 2){
-        torre.style.backgroundColor="orange";
-      }
-      body.appendChild(torre);
-  }
-}
-criaTorres()
+      main.appendChild(torre1);
+      main.appendChild(torre2);
+      main.appendChild(torre3);
+
+    }
+
+criarElementos()
 
 
 

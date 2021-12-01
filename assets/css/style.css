@@ -1,9 +1,23 @@
-.dis1{
-  margin-left: 100px;
+main{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 900px;
+  width: 1231px;
 }
-.dis2{
-  margin-left: 75px;
+
+.tor1{
+  margin: 400px 0 0 400px;
 }
-.dis3{
-  margin-left: 50px;
+
+.tor2{
+  margin: 400px 0 0 197px;
 }
+
+.tor3{
+  margin-top: 400px;
+} 
+ .dis1{
+  margin-right: 100px;
+}
+
+
