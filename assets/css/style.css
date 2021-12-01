@@ -1,7 +1,123 @@
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
     height: 450px;
     width: 600px;
     
+    
+}
+.tor1 {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+.tor2 {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+.tor3 {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+body h2{
+    position:absolute;
+    top: 0;
+    font-family: 'Estonia';
+    text-align: center;
+    margin: 20px auto;
+    font-size: 45px;
+    line-height: 60px;
+    background-color: #ffffffbd;
+}
+.start-modal {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 650ms;
+}
+
+.modal p {
+    font-family: 'Cormorant Garamond', serif, cursive;
+    font-weight: 700;
+    padding: 0 15px;
+    color: #3b188d;
+}
+
+.modal {
+    width: 70%;
+    background-color: #dcedec;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.modal h1 {
+    font-family: 'Estonia';
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #250755;;
+    margin: 10px;
+}
+
+.modal h3 {
+    font-family: 'Cormorant Garamond', serif, cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4328a3;
+    margin: 5px;
+}
+
+.play-button {
+    cursor: pointer;
+    color: #4328a3;
+    background-color: #4478b3bd;
+    height: 50px;
+    font-size: 20px;
+}
+
+.jogarNovamente{
+    cursor: pointer;
+    color: #DAA520;
+    background-color: #f5f5dcbd; 
+    height: 50px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 500px){ 
+    
+    .modal {
+        width: 50%;
+        max-width: 500px;
+        background-color: #dcedec;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin: 100px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
